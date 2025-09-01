@@ -1,0 +1,30 @@
+/* App-specific styles */
+.calendar-month {
+  /* Ensure smooth scrolling for calendar months */
+  scroll-margin-top: 4rem;
+}
+
+/* Custom scrollbar for webkit browsers */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: theme('colors.gray.100');
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: theme('colors.gray.300');
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.gray.400');
+}
+
+/* Smooth transitions for interactive elements */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
